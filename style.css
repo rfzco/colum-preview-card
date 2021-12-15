@@ -1,0 +1,204 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+   /* Primary */
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+
+--Transparent-white :hsl(0, 0%, 100%, 0.75);
+--Very-light-gray : hsl(0, 0%, 95%);
+
+--Lexend: 'Lexend Deca', sans-serif;
+--Big-Shouders: 'Big Shoulders Display', cursive;
+}
+
+body{
+    background: var(--Transparent-white);
+    width: 100vw;
+    height: 100vh;
+
+}   .conteiner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    main{
+        margin-top: 20%;
+        max-width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+        
+        
+            .sedans{
+                max-width: 300px;
+                height: 400px;
+                background: var(--Bright-orange);
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                padding: 15%;
+            }
+                .sedans img{
+                    height: 40px;
+                    width: 70px;
+                    
+                }
+                .sedans h1{
+                    color: var(--Very-light-gray);
+                    font-family: var(--Lexend);
+                    text-transform:uppercase;
+                    font-weight:400 ;
+                    font-size: 30px;
+                    transform: scaley(1.5);
+                    padding: 15% 0;
+                }
+                .sedans ,.SUVs ,.Luxury p{
+                    color: var(--Very-light-gray);
+                }
+
+                .sedans button{
+                    font-family: var(--Big-Shouders);
+                    font-weight: 700;
+                    margin-top: 10% ;
+                    color: var(--Bright-orange);
+                    width: 65%;
+                    height: 45px;
+                    border-radius: 40px;
+                    border: none;
+                    cursor: pointer;
+                }
+                    .sedans button:hover{
+                        color: var(--Very-light-gray);
+                        background: transparent;
+                        border: solid 2px var(--Very-light-gray);
+                    }
+            .SUVs{
+                max-width: 300px;
+                height: 400px;
+                background: var(--Dark-cyan);
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                padding: 15%;
+            }
+                .SUVs img{
+                    height: 40px;
+                    width: 70px;
+                
+                }
+                .SUVs h1{
+                    color: var(--Very-light-gray);
+                    font-family: var(--Lexend);
+                    text-transform:uppercase;
+                    font-weight:400 ;
+                    font-size: 30px;
+                    transform: scaley(1.5);
+                    padding: 15% 0;
+                }
+                .SUVs button{
+                    font-family: var(--Big-Shouders);
+                    font-weight: 700;
+                    margin-top: 10% ;
+                    color: var(--Dark-cyan);
+                    width: 65%;
+                    height: 45px;
+                    border-radius: 40px;
+                    border: none;
+                    cursor: pointer;
+                }
+                    .SUVs button:hover{
+                        color: var(--Very-light-gray);
+                        background: transparent;
+                        border: solid 2px var(--Very-light-gray);
+                    }
+            .Luxury{
+                max-width: 300px;
+                height: 400px;
+                background: var(--Very-dark-cyan);
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                padding: 15%;
+            }
+                .Luxury img{
+                    height: 40px;
+                    width: 70px;
+            
+                }
+                .Luxury h1{
+                    color: var(--Very-light-gray);
+                    font-family: var(--Lexend);
+                    text-transform:uppercase;
+                    font-weight:400 ;
+                    font-size: 30px;
+                    transform: scaley(1.5);
+                    padding: 15% 0;
+                }
+                .Luxury button{
+                    font-family: var(--Big-Shouders);
+                    font-weight: 700;
+                    margin-top: 10% ;
+                    color: var(--Very-dark-cyan);
+                    width: 65%;
+                    height: 45px;
+                    border-radius: 40px;
+                    border: none;
+                    cursor: pointer;
+                }
+                    .Luxury button:hover{
+                        color: var(--Very-light-gray);
+                        background: transparent;
+                        border: solid 2px var(--Very-light-gray);
+                    }
+
+
+
+@media screen and (min-width: 768px) {
+    main{
+        margin-top: 15%;
+        width: 80wv;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    } 
+    .sedans{
+        width: 800px;
+        height: 400px;
+        background: var(--Bright-orange);
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 5%;
+        
+    }
+    .SUVs{
+        width: 800px;
+        height: 400px;
+        background: var(--Dark-cyan);
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 5%;
+        
+    }
+    .Luxury{
+        width: 800px;
+        height: 400px;
+        background: var(--Very-dark-cyan);
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 5%;
+        
+    }
+}
